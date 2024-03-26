@@ -20,9 +20,7 @@ class User extends Model
     public function orderItems(){
         return $this->hasMany(OrderItem::class);
             } 
-    public function categories(){
-        return $this->belongsToMany(User::class,'categories_users','user_id','category_id');
-    }
+    
     public function products(){
         return $this->hasMany(Product::class);
     }
