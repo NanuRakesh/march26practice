@@ -20,6 +20,8 @@ class User extends Model
     public function orderItems(){
         return $this->hasMany(OrderItem::class);
             } 
+
+            
     
     public function products(){
         return $this->hasMany(Product::class);
